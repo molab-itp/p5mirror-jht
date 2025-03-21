@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- v1.7.0 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script> -->
+
+    <!-- v1.8.0 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script> -->
+
+    <!-- v1.9.0 -->
+    <!-- v1.9.1 -->
+    <!-- v1.9.2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js"></script>
+
+    <script src="https://p5livemedia.itp.io/simplepeer.min.js"></script>
+    <script src="https://p5livemedia.itp.io/socket.io.js"></script>
+    <script src="https://p5livemedia.itp.io/p5livemedia.js"></script>
+    <!-- <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script> -->
+    <!-- Need to make ml5 explicit to avoid fetch failure in p5js editor -->
+    <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+
+    <!--   
+    <script src="./external/lib/p5.min.js"></script>
+    <script src="./external/lib/p5.sound.min.js"></script>
+    <script src="./external/lib/simplepeer.min.js?v={{vers}}"></script>
+    <script src="./external/lib/socket.io.js"></script>
+    <script src="./external/lib/p5livemedia.js"></script>
+    <script src="./external/lib/ml5.min.js"></script>
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // track startup time for debugging
+      let a_start_now = window.performance.now();
+    </script>
+
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" />  -->
+    <style>
+      @media only screen and (max-width: 600px) {
+        body,
+        button,
+        select,
+        input {
+          font-size: 4vw;
+        }
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <!-- @@[prod][dev] -->
+    <script type="module" src="https://molab-itp.github.io/p5moRelease/videoKit/368/a_lib.js"></script>
+    <!-- <script type="module" src="../../p5videoKit/src/videoKit/a_lib.js?v=81"></script> -->
+
+    <script src="eff_a_slit_scan.js?v=81"></script>
+    <script src="sketch.js?v=81"></script>
+    <!-- must remove ?v=81 in p5js editor to get correct version of script -->
+  </body>
+</html>
